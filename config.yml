@@ -1,0 +1,6 @@
+#Checks for the lore specified below
+#The lore it checks for is in a list so multiple things can be checked for in the lore
+lore:
+- "check"
+#Message to be sent to the player when the action is cancelled
+message-cancelled: "&4This action was cancelled"

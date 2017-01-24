@@ -1,0 +1,8 @@
+name: AnvilBlock
+main: me.virustotal.AnvilBlock.AnvilBlock
+version: 1.1
+author: DrkMatr1984
+permissions:
+    AnvilBlock.bypass:
+        description: Bypass all of the anvil block blocking
+        default: false

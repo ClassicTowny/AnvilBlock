@@ -1,0 +1,66 @@
+##################################################
+########              Repairs            #########
+##################################################
+repairs: 
+## Specifies what to block on anvils. Options are : 'repairs', 'customname', 'lore', 'materialtype', and 'all'
+## repairs - Only blocks item repairs; if this is selected it will override displayname,
+##   materialtype, and lore checks
+## customname - Only blocks repairing items with custom names contained in the list below
+## lore - Only blocks repairing items with lore contained in the list below
+## materialtype - Only blocks repairing items with material types contained in the list below
+## all - blocks all anvil use; will override all of these and completely block the anvil gui
+##     Leave this list empty to prevent disabling repairs
+  methods: 
+  - lore
+  methodtypes:
+  ## Checks for the custom name specified below
+  ## The custom name it checks for is in a list so multiple names can be checked for
+    customname:
+    - "check"
+    ## Checks for the lore specified below
+    ## The lore it checks for is in a list so multiple things can be checked for in the lore
+    lore:
+    - "check"
+    ## Checks for the material types specified below
+    ## The material types it checks for are in a list so multiple material types
+    ## can be checked for. Get valid material types here : https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+    materialtype: []  ##Delete these brackets when adding to list
+    #- "WOODEN_SWORD"
+  messages:
+    #Message to be sent to the player when the action is cancelled
+    message-cancelled: "&4This action was cancelled"
+  enabledInWorlds:   ##Can use 'all'
+  - 'all'
+##################################################
+########              Renames            #########
+##################################################
+renames: 
+## Specifies what to block on anvils. Options are : 'renames', 'customname', 'lore', 'materialtype', and 'all'
+## renames - Only blocks item renames; if this is selected it will override customname,
+##   materialtype, and lore checks
+## customname - Only blocks renaming items with custom names contained in the list below
+## lore - Only blocks renaming items with lore contained in the list below
+## materialtype - Only blocks renaming items with material types contained in the list below
+## all - blocks all anvil use; will override all of these and completely block the anvil gui
+##     Leave this list empty to prevent disabling renames
+  methods: [] ##Delete these brackets when adding to list
+  #- "customname"
+  methodtypes:
+  ## Checks for the custom name specified below
+  ## The custom name it checks for is in a list so multiple names can be checked for
+    customname:
+    - "check"
+    ## Checks for the lore specified below
+    ## The lore it checks for is in a list so multiple things can be checked for in the lore
+    lore:
+    - "check"
+    ## Checks for the material types specified below
+    ## The material types it checks for are in a list so multiple material types
+    ## can be checked for. Get valid material types here : https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+    materialtype: []  ##Delete these brackets when adding to list
+    #- "WOODEN_SWORD"
+  messages:
+    #Message to be sent to the player when the action is cancelled
+    message-cancelled: "&4This action was cancelled"
+  enabledInWorlds:   ##Can use 'all'
+  - 'all'
